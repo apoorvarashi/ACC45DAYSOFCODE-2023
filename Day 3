@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+   int a,b;
+   printf("enter 1st number");
+   scanf("%d",&a);
+   b=a*a*a;
+   printf("cube=%d\n",b);
+ return(0);
+}
