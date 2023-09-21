@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    static int a=-5;
+    static int i=1;
+    while(a)
+    {
+        printf("%d %d\n",a,i);
+        a++;
+        i++;
+        main();   
+    }
+    return(0);
+}
