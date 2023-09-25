@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char n1[20],n2[20],n3[40];
+    printf("Enter 1st string");
+    gets(n1);
+    printf("Enter 2nd string");
+    gets(n2);
+    strcpy(n3,n1);
+    strcat(n3,n2);//for space
+    strcat(n3,n2);
+    printf("concatenated string is %s\n",n3);
+    return(0);
+    
+}
