@@ -1,0 +1,21 @@
+#include<stdio.h>
+void convert(char n[])
+{
+    int i=0;
+    while(n[i]='0')
+    {
+        if (n[i]>='a'&& n[i]<='z')
+        printf("%c",n[i]-32);
+        else
+        printf("%c",n[i]);
+    }
+}
+int main()
+{
+    char n[20];
+    printf("Enter any string");
+    //scanf("%s",n);
+    gets(n);
+    convert(n);
+    return(0);
+}
