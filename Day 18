@@ -1,0 +1,24 @@
+#include<stdio.h>
+struct employee
+{
+  int empno;
+  char name[20];
+  float sal;
+  struct address
+  {
+    char hno[5],street[10],city[15],state[15];
+  }ad;
+}e;
+int main()
+{
+  printf("Enter empno,name and sal ");
+  scanf("%d %s %f",&e.empno,e.name,&e.sal);
+  printf("Enter hno,street,city and state ");
+  scanf("%s %s %s %s",e.ad.hno,e.ad.street,e.ad.city,
+			e.ad.state);
+  printf("empno %d name %s sal %f\n",e.empno,e.name,
+					e.sal);
+  printf("hno %s street %s city %s state %s\n",
+  e.ad.hno, e.ad.street,e.ad.city,e.ad.state);
+  return(0);
+}
