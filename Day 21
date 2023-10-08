@@ -1,0 +1,18 @@
+#include<stdio.h>
+struct student
+{
+	int roll;
+	char name[20];
+	float m1,m2,m3,total,per;
+};
+//}s;
+int main()
+{
+	struct student s; //local variable
+	printf("Enter roll, name m1,m2, and m3 ");
+	scanf("%d %s %f %f %f",&s.roll,s.name,&s.m1,&s.m2,&s.m3);
+	s.total=s.m1+s.m2+s.m3;
+	s.per=s.total/3;
+	printf("roll = %d name = %s  Total = %.3f per = %.2f\n",s.roll,s.name,s.total,s.per);
+	return 0;
+}
