@@ -1,0 +1,20 @@
+#include<stdio.h>
+union student2
+{
+int roll;
+char name[20];
+float age;
+}s2;
+int main()
+{
+printf("Enter roll ");
+scanf("%d",&s2.roll);
+printf("Roll number %d\n",s2.roll);
+printf("Enter name ");
+scanf("%s",s2.name);
+printf("Name %s\n",s2.name);
+printf("Enter age ");
+scanf("%f",&s2.age);
+printf("Age %f\n",s2.age);
+return(0);
+}
