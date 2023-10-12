@@ -1,0 +1,26 @@
+#include<stdio.h>
+struct student
+{
+	int roll;
+	char name[20];
+	float per;
+};
+//}s[40];
+//struct student s[40]; //global  variable
+int main()
+{
+	struct student s[40]; //local variable
+	int i;
+	//input
+	for(i=0;i<40;i++)
+	{
+		printf("Enter roll, name and per ");
+		scanf("%d %s %f",&s[i].roll,s[i].name,&s[i].per);
+	}
+	//display
+	for(i=0;i<40;i++)
+	{
+		printf("roll = %d name = %s  per = %.2f\n",s[i].roll,s[i].name,s[i].per);
+	}
+	return 0;
+}
